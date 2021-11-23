@@ -13,6 +13,8 @@
 		49B99009274CE0760059E85A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B99008274CE0760059E85A /* Assets.xcassets */; };
 		49B9900C274CE0760059E85A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B9900A274CE0760059E85A /* LaunchScreen.storyboard */; };
 		49B99015274CE1CC0059E85A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 49B99014274CE1CC0059E85A /* SnapKit */; };
+		49B99017274CEFB80059E85A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B99016274CEFB80059E85A /* Extensions.swift */; };
+		49B99028274CF4980059E85A /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 49B99027274CF4980059E85A /* SwiftDate */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,7 @@
 		49B99008274CE0760059E85A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49B9900B274CE0760059E85A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49B9900D274CE0760059E85A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B99016274CEFB80059E85A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B99028274CF4980059E85A /* SwiftDate in Frameworks */,
 				49B99015274CE1CC0059E85A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +63,7 @@
 				49B98FFF274CE0740059E85A /* AppDelegate.swift */,
 				49B99001274CE0740059E85A /* SceneDelegate.swift */,
 				49B99003274CE0740059E85A /* ViewController.swift */,
+				49B99016274CEFB80059E85A /* Extensions.swift */,
 				49B99008274CE0760059E85A /* Assets.xcassets */,
 				49B9900A274CE0760059E85A /* LaunchScreen.storyboard */,
 				49B9900D274CE0760059E85A /* Info.plist */,
@@ -84,6 +89,7 @@
 			name = SimpleScrollView;
 			packageProductDependencies = (
 				49B99014274CE1CC0059E85A /* SnapKit */,
+				49B99027274CF4980059E85A /* SwiftDate */,
 			);
 			productName = SimpleScrollView;
 			productReference = 49B98FFC274CE0740059E85A /* SimpleScrollView.app */;
@@ -115,6 +121,7 @@
 			mainGroup = 49B98FF3274CE0740059E85A;
 			packageReferences = (
 				49B99013274CE1CC0059E85A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				49B99026274CF4980059E85A /* XCRemoteSwiftPackageReference "SwiftDate" */,
 			);
 			productRefGroup = 49B98FFD274CE0740059E85A /* Products */;
 			projectDirPath = "";
@@ -145,6 +152,7 @@
 				49B99004274CE0740059E85A /* ViewController.swift in Sources */,
 				49B99000274CE0740059E85A /* AppDelegate.swift in Sources */,
 				49B99002274CE0740059E85A /* SceneDelegate.swift in Sources */,
+				49B99017274CEFB80059E85A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +374,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		49B99026274CF4980059E85A /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -373,6 +389,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 49B99013274CE1CC0059E85A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		49B99027274CF4980059E85A /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49B99026274CF4980059E85A /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
